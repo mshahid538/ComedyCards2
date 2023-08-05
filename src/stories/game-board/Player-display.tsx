@@ -11,7 +11,7 @@ const PlayerDisplay = ( player:PlayerProps ) => {
 
     const renderWaitingForPlayer = () => {
         if (!player.hasFoundPlayer) {
-            return <div>Waiting for other players to join...</div>
+            return <div>Waiting for players...</div>
         } else {
             return <div>
                 <span style={{ color: player.color }}> {player.name} - <strong>{player.score}</strong></span> 
@@ -22,7 +22,7 @@ const PlayerDisplay = ( player:PlayerProps ) => {
     }
 
     return (
-        <div style={{ padding: 20, width: "100%", backgroundColor: player.hasFoundPlayer ? "white" : "lightgrey", height: "100%" }}>
+        <div style={{ padding: 10, width: "100%", height: "100%" }}>
             {renderWaitingForPlayer()}
         </div>
 

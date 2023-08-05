@@ -1,4 +1,5 @@
 import { fetchData } from "../utils/web-requests";
+import Button from '@mui/material/Button';
 
 export default function Admin() {
 
@@ -7,7 +8,7 @@ export default function Admin() {
             Admin page for dev tools and experiments.
             <div style={{marginTop: 10}}>
                 API Test
-                <button style={{margin: 10}} onClick={ fetchData }> Call API </button>
+                <Button variant="contained" style={{margin: 10}} onClick={ fetchData }> Call API </Button>
             </div>
         </div>
       );

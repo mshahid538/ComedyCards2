@@ -1,6 +1,7 @@
 
 import { Authenticator } from "@aws-amplify/ui-react";
 import '@aws-amplify/ui-react/styles.css';
+import Button from '@mui/material/Button';
 
 export default function FindGame() {
     return (
@@ -8,7 +9,7 @@ export default function FindGame() {
             {({ signOut }) => (
                 <div>
                     Finding Game!
-                    <button onClick={signOut}> Sign Out </button>
+                    <Button variant="contained" onClick={signOut}> Sign Out </Button>
                 </div>
             )}
         </Authenticator>

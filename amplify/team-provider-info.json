@@ -33,7 +33,7 @@
         },
         "newCardsLambda": {
           "deploymentBucketName": "amplify-amplifycomedycards-dev-150210-deployment",
-          "s3Key": "amplify-builds/newCardsLambda-36484f6a4862796c5a37-build.zip"
+          "s3Key": "amplify-builds/newCardsLambda-62517375596c52386565-build.zip"
         }
       },
       "api": {
