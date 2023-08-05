@@ -13,6 +13,12 @@ import GameBoard from './routes/game-board.tsx';
 import MainMenu from './routes/main-menu.tsx';
 import Settings from './routes/settings.tsx';
 
+import { Amplify } from 'aws-amplify';
+import awsmobile from './aws-exports';
+Amplify.configure(awsmobile);
+
+import Admin from './routes/admin.tsx';
+
 /**
  * This application is a card game similar to Cards Against Humanity, only, the dealer is a Large Language Model hosted on AWS, which occationally creates new content for the
  * question and answer cards based on current events in the world. The winner of the round will be determined by the votes players make on each answer card for how fun it was.
@@ -43,6 +49,10 @@ const router = createBrowserRouter([
       {
         path: "settings",
         element: <Settings />,
+      },
+      {
+        path: "admin",
+        element: <Admin />,
       },
     ],
   },

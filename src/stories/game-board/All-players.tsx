@@ -8,12 +8,15 @@ type AllPlayersProps = {
 const AllPlayers = (props: AllPlayersProps) => {
 
     return (
-        props.players.map((player: PlayerProps) => {
 
-            return (
-                <PlayerDisplay {...player} />
-            );
-        })
+        <div style={{width:200}}>
+            {props.players.map((player: PlayerProps) => {
+
+                return (
+                    <PlayerDisplay {...player} />
+                );
+            })}
+        </div>
     )
 };
 

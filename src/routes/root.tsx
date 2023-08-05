@@ -18,6 +18,12 @@ export default function Root() {
               <li>
                 <Link to={`settings`}>Settings</Link>
               </li>
+              <li>
+                <Link to={`admin`}>Admin</Link>
+              </li>
+              <li>
+                <Link to={`error`}>Error</Link>
+              </li>
             </ul>
           </nav>
         </div>
