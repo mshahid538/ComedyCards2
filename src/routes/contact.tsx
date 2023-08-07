@@ -1,5 +1,7 @@
 import { Form } from "react-router-dom";
 
+// This file is from an example, will be deleted soon.......
+
 export default function Contact() {
   const contact = {
     first: "Your",

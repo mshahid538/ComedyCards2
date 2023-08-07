@@ -29,6 +29,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background: -webkit-linear-gradient(45deg, #49a09d, #5f2c82);
+  background: linear-gradient(45deg, #49a09d, #5f2c82);
 }
 
 h1 {
@@ -67,6 +69,11 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+
+
+
 
 
 

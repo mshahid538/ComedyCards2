@@ -15,10 +15,32 @@ const allPlayerData = new Array<PlayerProps>();
 allPlayerData.push({
     name: 'Player 1',
     hasFoundPlayer: true,
-    isReady: false,
+    isReady: true,
     color: "red",
     score: 3,
 });
+allPlayerData.push({
+    name: 'Player 2',
+    hasFoundPlayer: true,
+    isReady: false,
+    color: "green",
+    score: 1,
+});
+allPlayerData.push({
+    name: 'Player 3',
+    hasFoundPlayer: false,
+    isReady: false,
+    color: "blue",
+    score: 1,
+});
+allPlayerData.push({
+    name: '',
+    hasFoundPlayer: false,
+    isReady: false,
+    color: "brown",
+    score: 1,
+});
+
 
 export const Default: AllPlayersStory = {
     args: {
